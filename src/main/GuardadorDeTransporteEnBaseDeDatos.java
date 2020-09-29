@@ -11,7 +11,7 @@ public class GuardadorDeTransporteEnBaseDeDatos {
 	public boolean guardar() {
 		// Código para guardar el estado en DB el string devuelto por el siguiente
 		// método:
-		aGuardar.obtenerEstado();
+		System.out.println("Guardando...\n"+aGuardar.obtenerEstado());
 		return true;
 	}
 

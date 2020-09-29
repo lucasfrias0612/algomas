@@ -1,10 +1,14 @@
 package main;
 
 public class Avion extends TransporteGuardable implements ITransporteAero {
-	public int VelocidadActual;
-	public int VelocidadMaxima;
+
 	public int AlturaActual;
 	public int AlturaMaxima;
+
+	public Avion(int velocidadMaxima, int alturaMaxima) {
+		super(velocidadMaxima);
+		this.AlturaMaxima = alturaMaxima;
+	}
 
 	@Override
 	public void volar(int altitud) {
